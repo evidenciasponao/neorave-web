@@ -1,7 +1,7 @@
 .bio-section {
   background: #000;
   min-height: 100vh;
-  padding: 40px 40px;
+  padding: 40px;
   color: white;
 }
 
@@ -9,13 +9,16 @@
   max-width: 1400px;
   min-height: 80vh;
   margin: auto;
+
   display: flex;
   align-items: center;
-  gap: 100px;
+  justify-content: center;
+
+  gap: 80px;
 }
 
 .bio-image {
-  flex: 1.3;
+  flex: 1.2;
 }
 
 .bio-content {
@@ -24,8 +27,131 @@
 
 .bio-image img {
   width: 100%;
-  max-width: 650px;
+  max-width: 600px;
   display: block;
   margin: auto;
   filter: grayscale(100%);
+}
+
+.tag {
+  color: #ff2d2d;
+  font-size: 12px;
+  letter-spacing: 4px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.bio-content h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.lead {
+  font-size: 1.3rem;
+  color: #bdbdbd;
+  margin-bottom: 30px;
+}
+
+.bio-content p {
+  color: #d0d0d0;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.presskit-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+
+  border: 1px solid #ff2d2d;
+  color: white;
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.presskit-btn:hover {
+  background: #ff2d2d;
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 992px) {
+
+  .bio-container {
+    gap: 50px;
+  }
+
+  .bio-image img {
+    max-width: 450px;
+  }
+
+  .bio-content h1 {
+    font-size: 3.5rem;
+  }
+
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .bio-section {
+    padding: 30px 20px;
+  }
+
+  .bio-container {
+    flex-direction: column;
+    text-align: center;
+    min-height: auto;
+    gap: 30px;
+  }
+
+  .bio-image,
+  .bio-content {
+    width: 100%;
+  }
+
+  .bio-image img {
+    max-width: 320px;
+  }
+
+  .bio-content h1 {
+    font-size: 3rem;
+  }
+
+  .lead {
+    font-size: 1.1rem;
+  }
+
+  .bio-content p {
+    text-align: left;
+  }
+
+}
+
+/* ========================= */
+/* MOBILE PEQUEÑO */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+  .bio-image img {
+    max-width: 260px;
+  }
+
+  .bio-content h1 {
+    font-size: 2.4rem;
+  }
+
+  .tag {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
 }

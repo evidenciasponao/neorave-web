@@ -88,7 +88,6 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/Roboto-Regular.css"
             ],
             "scripts": []
           }
