@@ -9,3 +9,7 @@
   background-color: black;
   color: white;
 }
+
+.video-container{
+  width: min(90vw, 1100px);
+}
