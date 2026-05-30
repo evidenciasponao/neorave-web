@@ -14,6 +14,7 @@ import { DatesComponent } from './Pages/dates/dates.component';
 import { ServicesComponent } from './Pages/services/services.component';
 import { ContactComponent } from './Pages/contact/contact.component';
 import { VisualArtComponent } from './Pages/visual-art/visual-art.component';
+import { SupportComponent } from './Pages/support/support.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { VisualArtComponent } from './Pages/visual-art/visual-art.component';
     DatesComponent,
     ServicesComponent,
     ContactComponent,
-    VisualArtComponent
+    VisualArtComponent,
+    SupportComponent
   ],
   imports: [
     BrowserModule,

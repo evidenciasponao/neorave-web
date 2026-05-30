@@ -8,6 +8,7 @@ import { DatesComponent } from './Pages/dates/dates.component';
 import { ServicesComponent } from './Pages/services/services.component';
 import { ContactComponent } from './Pages/contact/contact.component';
 import { VisualArtComponent } from './Pages/visual-art/visual-art.component';
+import { SupportComponent } from './Pages/support/support.component';
 
 const routes: Routes = [
   {
@@ -34,6 +35,9 @@ const routes: Routes = [
   {
     path: 'visual-art', component: VisualArtComponent
   },
+  {
+    path: 'support', component: SupportComponent
+  }
 ];
 
 @NgModule({
