@@ -1,23 +1,17 @@
-
-.profile{
-  border-radius: 3%;
-  width: 350px;
-  height: 410px;
-}
-
 .body{
-  background-color: black;
-  color: white;
+  background:black;
+  color:white;
+  min-height:100vh;
 }
 
 .video-container{
-  width: min(90vw, 900px);
+  width: min(70%, 600px);
   margin: 0 auto;
 }
 
 .video-container iframe{
   width: 100%;
-  aspect-ratio: 16 / 9;
-  height: auto;
+  aspect-ratio: 16/9;
   border: none;
+  display: block;
 }

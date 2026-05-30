@@ -1,12 +1,18 @@
+.body{
+  background:black;
+  color:white;
+  min-height:100vh;
+}
 
 .video-container{
-  width: min(90vw, 900px);
+  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
 }
 
 .video-container iframe{
   width: 100%;
-  aspect-ratio: 16 / 9;
-  height: auto;
+  aspect-ratio: 16/9;
   border: none;
+  display: block;
 }
