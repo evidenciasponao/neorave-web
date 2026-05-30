@@ -5,8 +5,7 @@
 }
 
 .video-container{
-  width: 100%;
-  max-width: 800px;
+  width: min(70%, 600px);
   margin: 0 auto;
 }
 
