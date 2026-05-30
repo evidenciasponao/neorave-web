@@ -9,18 +9,29 @@
   color: white;
 }
 
+/* SOUNDCLOUD */
 
-
-
-
-.video-container{
+.soundcloud-container{
   width: min(90vw, 900px);
   margin: 0 auto;
 }
 
-.video-container iframe{
+.soundcloud-container iframe{
   width: 100%;
-  aspect-ratio: 16 / 9;
-  height: auto;
+  height: 500px;
   border: none;
+}
+
+/* MÓVIL */
+
+@media (max-width: 768px){
+
+  .soundcloud-container{
+    width: 95%;
+  }
+
+  .soundcloud-container iframe{
+    height: 650px;
+  }
+
 }
