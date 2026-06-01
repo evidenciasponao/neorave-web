@@ -1,3 +1,36 @@
-.footer{
-  background-color: black;
+.footer {
+  background: #000;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.footer-brand {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: rgba(255,255,255,.8);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #00ff99;
+}
+
+.footer-copy {
+  margin-top: 2rem;
+  color: rgba(255,255,255,.5);
+  font-size: 0.85rem;
 }
