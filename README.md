@@ -3,6 +3,7 @@
 Official website of **NEØRAVE** — DJ / producer (Hard Techno, Industrial, Cyberpunk)
 
 🌐 https://www.neorave-web.shop
+<img width="1887" height="881" alt="image" src="https://github.com/user-attachments/assets/4071664e-99b8-4b93-a0d1-edbe60d83b41" />
 
 ---
 
