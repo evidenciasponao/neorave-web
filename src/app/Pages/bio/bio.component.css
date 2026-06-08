@@ -1,78 +1,129 @@
+/* SECTION BASE (limpio, como el resto del sistema) */
 .bio-section {
   background: #000;
   min-height: 100vh;
-  padding: 40px;
+  padding: 40px 20px;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* 🔥 CARD PRINCIPAL (igual SUPPORT STYLE) */
 .bio-container {
-  max-width: 1400px;
-  min-height: 80vh;
-  margin: auto;
+  width: min(1000px, 100%);
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  gap: 80px;
+  gap: 50px;
+
+  padding: 40px 30px;
+
+  border: 1px solid rgba(0, 255, 136, 0.18);
+
+  background: rgba(255, 255, 255, 0.02);
+
+  backdrop-filter: blur(10px);
+
+  border-radius: 18px;
 }
 
+/* IMAGE */
 .bio-image {
-  flex: 1.2;
-}
-
-.bio-content {
-  flex: 1;
+  flex: 1.1;
 }
 
 .bio-image img {
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
+
   display: block;
   margin: auto;
+
   filter: grayscale(100%);
+
+  border-radius: 6px;
+
+  opacity: 0.95;
 }
 
+/* CONTENT */
+.bio-content {
+  flex: 1;
+}
+
+/* TAG (lo dejamos pero más sutil como “label”) */
 .tag {
-  color: #ff2d2d;
-  font-size: 12px;
-  letter-spacing: 4px;
   display: block;
+
+  color: rgba(0, 255, 136, 0.8);
+
+  font-size: 11px;
+
+  letter-spacing: 3px;
+
   margin-bottom: 15px;
 }
 
+/* TITLE */
 .bio-content h1 {
-  font-size: clamp(3rem, 6vw, 5rem);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+
   margin-bottom: 10px;
+
   line-height: 1;
+
+  letter-spacing: 2px;
 }
 
+/* LEAD */
 .lead {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+
   color: #bdbdbd;
-  margin-bottom: 30px;
+
+  margin-bottom: 25px;
 }
 
+/* TEXT */
 .bio-content p {
   color: #d0d0d0;
+
   line-height: 1.8;
-  margin-bottom: 20px;
+
+  margin-bottom: 18px;
+
+  font-size: 0.95rem;
 }
 
+/* BUTTON (mismo sistema SUPPORT / MUSIC) */
 .presskit-btn {
   display: inline-block;
-  margin-top: 20px;
-  padding: 14px 28px;
 
-  border: 1px solid #ff2d2d;
-  color: white;
+  margin-top: 20px;
+
+  padding: 14px 26px;
+
+  border: 1px solid rgba(0, 255, 136, 0.4);
+
+  color: #00ff88;
+
   text-decoration: none;
 
-  transition: 0.3s;
+  font-size: 0.85rem;
+
+  letter-spacing: 2px;
+
+  transition: 0.25s ease;
 }
 
 .presskit-btn:hover {
-  background: #ff2d2d;
+  background: #00ff88;
+  color: #000;
+
+  box-shadow: 0 0 25px rgba(0,255,136,0.25);
 }
 
 /* ========================= */
@@ -80,19 +131,14 @@
 /* ========================= */
 
 @media (max-width: 992px) {
-
   .bio-container {
-    gap: 50px;
+    gap: 30px;
+    padding: 30px 20px;
   }
 
   .bio-image img {
-    max-width: 450px;
+    max-width: 420px;
   }
-
-  .bio-content h1 {
-    font-size: 3.5rem;
-  }
-
 }
 
 /* ========================= */
@@ -100,58 +146,28 @@
 /* ========================= */
 
 @media (max-width: 768px) {
-
-  .bio-section {
-    padding: 30px 20px;
-  }
-
   .bio-container {
     flex-direction: column;
     text-align: center;
-    min-height: auto;
-    gap: 30px;
-  }
 
-  .bio-image,
-  .bio-content {
-    width: 100%;
-  }
-
-  .bio-image img {
-    max-width: 320px;
-  }
-
-  .bio-content h1 {
-    font-size: 3rem;
-  }
-
-  .lead {
-    font-size: 1.1rem;
+    gap: 25px;
   }
 
   .bio-content p {
     text-align: left;
   }
 
+  .bio-image img {
+    max-width: 300px;
+  }
 }
 
 /* ========================= */
-/* MOBILE PEQUEÑO */
+/* SMALL MOBILE */
 /* ========================= */
 
 @media (max-width: 480px) {
-
   .bio-image img {
-    max-width: 260px;
+    max-width: 240px;
   }
-
-  .bio-content h1 {
-    font-size: 2.4rem;
-  }
-
-  .tag {
-    font-size: 10px;
-    letter-spacing: 2px;
-  }
-
 }
