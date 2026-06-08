@@ -1,37 +1,80 @@
-.profile{
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
-}
-
-.body{
-  background-color: black;
+/* BODY */
+.body {
+  background: black;
   color: white;
+  min-height: 100vh;
 }
 
-/* SOUNDCLOUD */
-
-.soundcloud-container{
-  width: min(90vw, 900px);
-  margin: 0 auto;
+/* CONTENEDOR PRINCIPAL */
+.support-section {
+  padding: 25px 15px 70px;
+  display: flex;
+  justify-content: center;
 }
 
-.soundcloud-container iframe{
+/* CARD PRINCIPAL */
+.support-content {
+  width: min(900px, 100%);
+  text-align: center;
+
+  padding: 30px 20px;
+
+  border: 1px solid rgba(0, 255, 136, 0.18);
+
+  background: rgba(255, 255, 255, 0.02);
+
+  backdrop-filter: blur(10px);
+
+  border-radius: 18px;
+}
+
+/* ❌ SIN TÍTULOS / SUBTÍTULOS (modo minimal real) */
+.support-content h2,
+.support-content p {
+  display: none;
+}
+
+/* MUSIC CARD */
+.music {
+  border: 1px solid rgba(0, 255, 136, 0.15);
+  border-radius: 14px;
+  overflow: hidden;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  box-shadow: 0 0 20px rgba(0,255,136,0.06);
+
+  transition: 0.25s ease;
+
+  margin: 0;
+}
+
+/* hover sutil (sin exagerar glow) */
+.music:hover {
+  box-shadow: 0 0 28px rgba(0,255,136,0.12);
+  transform: translateY(-1px);
+}
+
+/* IFRAME */
+.music iframe {
   width: 100%;
-  height: 500px;
+  height: 420px;
   border: none;
+  display: block;
 }
 
-/* MÓVIL */
+/* MOBILE */
+@media (max-width: 768px) {
 
-@media (max-width: 768px){
-
-  .soundcloud-container{
-    width: 95%;
+  .support-section {
+    padding: 20px 10px 60px;
   }
 
-  .soundcloud-container iframe{
-    height: 650px;
+  .support-content {
+    padding: 20px 15px;
   }
 
+  .music iframe {
+    height: 520px;
+  }
 }

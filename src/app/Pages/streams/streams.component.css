@@ -1,58 +1,61 @@
+/* BODY */
+.body {
+  background: black;
+  color: white;
+  min-height: 100vh;
+}
+
+/* CONTAINER */
 .support-section {
-  padding: 40px 20px 120px;
+  padding: 25px 15px 70px;
   display: flex;
   justify-content: center;
 }
 
+/* CARD PRINCIPAL */
 .support-content {
   width: min(900px, 100%);
   text-align: center;
 
-  padding: 60px 40px;
+  padding: 30px 20px;
 
-  border: 1px solid rgba(0, 255, 136, 0.2);
+  border: 1px solid rgba(0, 255, 136, 0.18);
 
   background: rgba(255, 255, 255, 0.02);
 
   backdrop-filter: blur(10px);
 
-  border-radius: 20px;
+  border-radius: 18px;
 }
 
-.support-content h2 {
-  font-size: clamp(2rem, 4vw, 3rem);
-  color: #ffffff;
-  margin-bottom: 10px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
+/* ❌ sin títulos ni subtítulos */
+.support-content h2,
 .support-content p {
-  color: #cfcfcf;
-  margin-bottom: 40px;
+  display: none;
 }
 
-/* VIDEO CARD (igual STREAMS para coherencia total) */
+/* STREAM CARD */
 .stream {
   border: 1px solid rgba(0, 255, 136, 0.15);
-  border-radius: 12px;
+  border-radius: 14px;
   overflow: hidden;
 
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.45);
 
-  box-shadow: 0 0 25px rgba(0,255,136,0.08);
+  box-shadow: 0 0 20px rgba(0,255,136,0.06);
 
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 
-  transition: 0.3s ease;
+  transition: 0.25s ease;
 }
 
+/* hover sutil */
 .stream:hover {
-  box-shadow: 0 0 35px rgba(0,255,136,0.15);
-  transform: translateY(-2px);
+  box-shadow: 0 0 28px rgba(0,255,136,0.12);
+  transform: translateY(-1px);
 }
 
-/* RESPONSIVE IFRAME */
+/* iframe responsive */
 .stream iframe {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -60,9 +63,54 @@
   display: block;
 }
 
-/* MOBILE FIX */
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .support-section {
+    padding: 20px 10px 60px;
+  }
+
+  .support-content {
+    padding: 20px 15px;
+  }
+}
+
+.stream {
+  position: relative;
+}
+
+/* 🔥 FIX CRÍTICO PARA IFRAME EN MOBILE */
+.stream iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+/* 🔥 FIX COMPATIBILIDAD SAFARI / MOBILE FALLBACK */
+@supports not (aspect-ratio: 16 / 9) {
+  .stream {
+    position: relative;
+    padding-top: 56.25%;
+    height: 0;
+  }
+
+  .stream iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* 🔥 MOBILE SAFETY (evita cortes por layout padre) */
 @media (max-width: 768px) {
   .support-content {
-    padding: 40px 20px;
+    overflow: visible;
+  }
+
+  .stream {
+    overflow: hidden;
   }
 }
