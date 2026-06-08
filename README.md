@@ -1,27 +1,82 @@
-# Neoac2dj
+# NEØRAVE WEB
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
+Official website of **NEØRAVE** — DJ / producer (Hard Techno, Industrial, Cyberpunk)
 
-## Development server
+🌐 https://www.neorave-web.shop
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## Overview
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+NEØRAVE WEB is a personal project evolved into a **digital identity platform** for music, visual content, and live performance archive.
 
-## Build
+Originally built in 2022 using Angular 15, the project has been progressively redesigned into a structured UI system inspired by **dark electronic aesthetics and minimal cyber interfaces**.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+The goal is to present music and artistic identity as a unified experience rather than a traditional portfolio.
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Tech Stack
 
-## Running end-to-end tests
+- Angular
+- TypeScript
+- HTML5 / SCSS
+- Responsive Design
+- Custom UI system (glass + neon interface)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## Core Modules
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- **Music** — SoundCloud integration for releases and playlists  
+- **Streams** — YouTube live sets and performances  
+- **Visual Art** — curated audiovisual content  
+- **Dates** — live event history and performances  
+- **Support** — direct artist support system  
+- **Contact** — communication channels (email / WhatsApp)
+
+---
+
+## Design System
+
+The interface is built around a custom visual language inspired by:
+
+- Underground techno culture  
+- Cyberpunk UI systems  
+- Minimal dark interfaces  
+- Glassmorphism with neon accents  
+
+A unified “card system” is used across all sections to ensure consistency and visual hierarchy.
+
+---
+
+## Status
+
+- Active production project  
+- Fully responsive  
+- Deployed with custom domain  
+- Modular UI architecture  
+- Continuous visual refinement
+
+---
+
+## Roadmap
+
+- Digital releases / track sales system  
+- Expanded live performance archive  
+- Enhanced UI transitions (system-like navigation)  
+- Potential gated content for exclusive releases  
+
+---
+
+## Philosophy
+
+> “A digital system for sound, identity and experience.”
+
+---
+
+## Author
+
+**NEØRAVE**  
+DJ / Producer / Developer  
+Florencia, Caquetá — Colombia
