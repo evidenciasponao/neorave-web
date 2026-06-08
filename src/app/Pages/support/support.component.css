@@ -1,36 +1,43 @@
+/* CONTAINER */
 .support-section {
-  padding: 40px 20px 120px;
+  padding: 25px 15px 70px;
   display: flex;
   justify-content: center;
 }
 
+/* CARD PRINCIPAL */
 .support-content {
   width: min(900px, 100%);
   text-align: center;
 
-  padding: 60px 40px;
+  padding: 25px 20px;
 
-  border: 1px solid rgba(0, 255, 136, 0.2);
+  border: 1px solid rgba(0, 255, 136, 0.15);
 
   background: rgba(255, 255, 255, 0.02);
 
   backdrop-filter: blur(10px);
 
-  border-radius: 20px;
+  border-radius: 18px;
 }
 
+/* TITULO AJUSTADO (SUBIDO + MÁS LIMPIO) */
 .support-content h2 {
   font-size: clamp(2rem, 4vw, 3rem);
 
   color: #ffffff;
 
-  margin-bottom: 20px;
+  margin-top: 0;        /* 👈 sube el título */
+  margin-bottom: 10px;  /* menos espacio abajo */
 
   letter-spacing: 3px;
 
   text-transform: uppercase;
+
+  line-height: 1;
 }
 
+/* TEXTO */
 .support-content p {
   max-width: 700px;
 
@@ -43,6 +50,7 @@
   font-size: 1.05rem;
 }
 
+/* BOTÓN */
 .support-btn {
   display: inline-flex;
 
@@ -73,4 +81,16 @@
   box-shadow:
     0 0 20px rgba(0,255,136,.4),
     0 0 40px rgba(0,255,136,.2);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .support-section {
+    padding: 20px 10px 60px;
+  }
+
+  .support-content {
+    padding: 18px 12px;
+  }
 }

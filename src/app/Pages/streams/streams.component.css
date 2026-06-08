@@ -1,116 +1,17 @@
-/* BODY */
-.body {
-  background: black;
-  color: white;
-  min-height: 100vh;
+.body{
+  background:black;
+  color:white;
+  min-height:100vh;
 }
 
-/* CONTAINER */
-.support-section {
-  padding: 25px 15px 70px;
-  display: flex;
-  justify-content: center;
+.video-container{
+  width: min(70%, 600px);
+  margin: 0 auto;
 }
 
-/* CARD PRINCIPAL */
-.support-content {
-  width: min(900px, 100%);
-  text-align: center;
-
-  padding: 30px 20px;
-
-  border: 1px solid rgba(0, 255, 136, 0.18);
-
-  background: rgba(255, 255, 255, 0.02);
-
-  backdrop-filter: blur(10px);
-
-  border-radius: 18px;
-}
-
-/* ❌ sin títulos ni subtítulos */
-.support-content h2,
-.support-content p {
-  display: none;
-}
-
-/* STREAM CARD */
-.stream {
-  border: 1px solid rgba(0, 255, 136, 0.15);
-  border-radius: 14px;
-  overflow: hidden;
-
-  background: rgba(0, 0, 0, 0.45);
-
-  box-shadow: 0 0 20px rgba(0,255,136,0.06);
-
-  margin-bottom: 18px;
-
-  transition: 0.25s ease;
-}
-
-/* hover sutil */
-.stream:hover {
-  box-shadow: 0 0 28px rgba(0,255,136,0.12);
-  transform: translateY(-1px);
-}
-
-/* iframe responsive */
-.stream iframe {
+.video-container iframe{
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16/9;
   border: none;
   display: block;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-
-  .support-section {
-    padding: 20px 10px 60px;
-  }
-
-  .support-content {
-    padding: 20px 15px;
-  }
-}
-
-.stream {
-  position: relative;
-}
-
-/* 🔥 FIX CRÍTICO PARA IFRAME EN MOBILE */
-.stream iframe {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-}
-
-/* 🔥 FIX COMPATIBILIDAD SAFARI / MOBILE FALLBACK */
-@supports not (aspect-ratio: 16 / 9) {
-  .stream {
-    position: relative;
-    padding-top: 56.25%;
-    height: 0;
-  }
-
-  .stream iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-/* 🔥 MOBILE SAFETY (evita cortes por layout padre) */
-@media (max-width: 768px) {
-  .support-content {
-    overflow: visible;
-  }
-
-  .stream {
-    overflow: hidden;
-  }
 }
